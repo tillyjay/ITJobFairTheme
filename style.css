@@ -1,0 +1,395 @@
+/* 
+Theme Name: NSCC IT Job Fair
+Author: NSCC IT Job Fair Team
+Version: 1.0
+*/ 
+
+:root {
+    --bs-font-sans-serif: "Nunito", sans-serif;
+    --bs-body-font-family: "Nunito", sans-serif;
+}
+
+
+/* GENERAL STYLES */
+.container {
+    max-width: 1200px;
+    font-family: Nunito, sans-serif;
+}
+
+body h1 {
+    font-size: 2.25rem;
+    font-weight: 650;
+    margin-top: 2rem;
+}
+
+h2, h3 {
+    margin-top: 2rem;
+}
+
+body a {
+    color: #3490dc;
+    text-decoration: none;
+}
+
+body ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #454d55;
+}
+
+
+.btn-nav-feature {
+    background-color: #e2792c;
+    color: white;
+    border: none;
+}
+
+.btn-nav-feature:hover {
+    background-color: #d95e1f;
+    color: white;
+}
+
+.main-button a {
+    background-color: #f3f0f0;
+    color: #993600;
+    border: 1px solid #E2792C;
+    border-radius: .4rem;
+    line-height: 1.6;
+    font-weight: 500;
+    padding: .375rem .75rem;
+    font-size: .9rem;
+}
+
+.main-button a:hover {
+    background-color: #e2792c;
+    color: white;
+}
+
+.icon-wrapper {
+    font-size: .9rem;
+    vertical-align: middle;
+}
+
+hr.orange-separator {
+    background-color: #e2792c;
+    height: 4px;
+    width: 65px;
+    border-radius: 10px;
+    border: none;
+    opacity: 1;
+    margin: 1.2rem 0 2.5rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #454d55;
+}
+
+/* HEADER/NAVBAR STYLES */
+
+.navbar-nav a.nav-link{
+    color: #111111;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.navbar-nav a.nav-link:hover{
+    color: #eb6200;
+}
+
+
+/* FOOTER STYLES */
+footer {
+    background-color: #e2792c;
+    margin-top: 2rem;
+}
+
+.footer-logo {
+    height: 50px;
+    padding-right: 10px;
+}
+
+footer a.nav-link {
+    color: #111111;
+}
+
+footer a.nav-link:hover {
+    color: #70757a;
+    text-decoration: none;
+  }
+
+
+/* FRONT PAGE STYLES */
+.featured-image-container {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+}
+
+.overlay-content {
+    font-family: "Nunito", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+.overlay-text {
+    color: white;
+    display: inline-block;
+    font-size: 2.4rem;
+    background: rgba(60, 60, 60, 0.6);
+    padding: 5px;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    left: 30%; 
+}
+
+.overlay-button {
+    position: absolute;
+    left: 30%;
+    background-color:#e2792c;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: white;
+    border: none;
+}
+
+/*separators the page*/
+.home_separator{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+/* Map section styles*/
+.location_group > .wp-block-group__inner-container {
+    text-align: center;
+}
+
+/* Set max width of the map*/
+.event_map{
+    max-width: 700px !important;
+	margin: auto;
+} 
+
+/* Featured sponsor styles*/
+/* Style for the container to set up a two-column layout */
+.featured_group > .wp-block-group__inner-container {
+    text-align: center;
+}
+
+.featured_sponsors > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px;
+    max-width: 790px;
+    margin: 40px auto;
+}
+
+/* Style for each sponsor block */
+.featured_sponsor {
+    border: 2px solid #e2792c;
+    display: flex;
+    flex-direction: column-reverse; /* Reverses the order to show the paragraph above the image */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    padding: 15px;
+    width: auto;
+    max-width: 380px !important;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+}
+
+/* Style for the image and paragraph within each block */
+.featured_sponsors > .wp-block-media-text__media, .featured_sponsors > .wp-block-media-text__content {
+    flex: 1; /* Allows the content area to expand */
+    display: flex;
+    align-items: center; /* Center the p tag vertically */
+    justify-content: center; /* Center the p tag horizontally */
+    width: 100%;
+}
+
+/*attendee count group styling*/
+.industry_attendees, .student_attendees {
+    margin-bottom: 20px; 
+}
+
+/* space above the p tag */
+.attendee_count_para {
+    margin-top: 20px;
+}
+
+
+/*list of organizations styles*/
+.list_of_org, .agenda_table table{
+	margin-top: 30px;
+	width: 100%;/* Stretches the table to full width */
+	border-collapse: collapse; /*removes space between borders */
+}
+
+/* makes both the agenda and list of org tables have less width*/
+.agenda_table, .org_container{
+	padding: 0 6vw;
+}
+
+/* table border styles(agenda and list of organizations)*/
+.list_of_org td{
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+figure.wp-block-table.agenda_table{
+	display: none;
+}
+
+.agenda_table td{
+	padding: .75rem;
+    vertical-align: top;
+	border: none;/* Overrides the default wp table styling*/
+    border-top: 1px solid #dee2e6; /* sets the table style*/
+}
+
+.agenda_button{
+	color: #993600;
+	background: #f3f0f0;
+	padding: 10px 15px;
+	border-radius: 5px;
+    border: 1px solid #e2792c;
+}
+
+
+/* STUDENT PAGE STYLES */
+.orange-heading {
+    color: #e2792c;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+
+/* CONTACT PAGE STYLES */
+.marc-contact {
+    border:2x solid rgb(186, 184, 184);
+    padding: 0;
+    margin-top: 4rem;
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px -5px #6c6c6c;
+  }
+
+.marc-contact:hover {
+    border:2x solid rgb(186, 184, 184);
+    box-shadow: 8px 16px 21px -4px rgb(122, 121, 122);
+}
+
+.marc-name {
+    font-weight: 700;
+}
+
+.email-titles{
+    font-size: 18px;
+    line-height: .5rem;
+    color: #454d55;
+    padding-top: 1rem;
+}
+
+.icon-text-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0rem;
+    padding: 0;
+}
+
+.email-icon {
+    margin-right: .5rem;
+}
+
+.pin-icon {
+    margin-right: 1rem;
+}
+
+.email-contact {
+    font-size: 1.1rem;
+    padding-top: .4rem;
+}
+
+.email-contact a {
+    color: #3490dc;
+    text-decoration: none;
+}
+
+
+/* ABOUT TEAM PAGE STYLES */
+.teams-table {
+    width: 50%;
+}
+
+.teams-table td {
+    width: 200px;
+}
+
+
+/* MEDIA QUERIES */
+/* Phone */
+@media (max-width: 767px) {
+    .overlay-text {
+        font-size: 1rem;
+        bottom: 25%;
+    }
+    
+    .overlay-button {
+      font-size: .8rem;
+      padding: .3rem .5rem;
+      bottom: 16%;
+    }
+
+    .featured_sponsors > .wp-block-group__inner-container {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+    .featured_sponsor {
+		margin: auto !important;
+        width: auto;
+    }
+}
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .overlay-text {
+        font-size: 1.5rem;
+        bottom: 30%;
+    }
+    
+    .overlay-button {
+      font-size: 1rem;
+      padding: .5rem 1rem;
+      bottom: 21%;
+    }
+  }
+  
+  /* Computer/Laptop */
+  @media (min-width: 1025px) {
+
+    .overlay-text {
+        font-size: 2.4rem;
+        bottom: 35%;
+    }
+    
+    .overlay-button {
+      font-size: 1.3rem;
+      padding: .5rem 1rem;
+      bottom: 28%;
+    }
+  }
+  
